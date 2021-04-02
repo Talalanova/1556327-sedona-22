@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <a class="page-header__logo">
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
@@ -12,7 +12,7 @@
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__site-list">
+          <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a>
                 Главная
@@ -53,7 +53,7 @@
               <h3 class="advantages__title">Настоящий городок</h3>
               <p class="advantages__number">№1</p>
               <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-              <ul class="advantages__sub-list">
+              <ul class="sub-list">
                 <li class="sub-list__item">
                   <h4 class="sub-list__title">Жилье</h4>
                   <p class="sub-list__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -101,21 +101,23 @@
       </section>
       <section class="map">
         <div class="map__wrapper">
+          <h2 class="map__title visually-hidden">Карта</h2>
           <iframe></iframe>
         </div>
       </section>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
+          <h2 class="page-footer__title visually-hidden">Контакты</h2>
           <p class="page-footer__hashtag">#VisitSedona</p>
-          <ul class="page-footer__social-list">
-            <li class="social-list__item">
-              <a class="social-list__link social__link--twitter" href="#">Мы в Твиттер</a>
+          <ul class="page-footer__social-list social-list">
+            <li class="social-list__item social-list__link">
+              <a class="social-list__link social-list__link--twitter" href="#">Мы в Твиттер</a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+            <li class="social-list__item social-list__link">
+              <a class="social-list__link social-list__link--facebook" href="#">Мы в Фейсбуке</a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link social__link--youtube" href="#">Мы на Ютуб</a>
+            <li class="social-list__item social-list__link">
+              <a class="social-list__link social-list__link--youtube" href="#">Мы на Ютуб</a>
             </li>
           </ul>
           <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/copyright-tmlacademy.svg" width="27" height="34" alt="Копирайт Академии"></a>
