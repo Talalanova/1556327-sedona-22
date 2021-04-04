@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="review-form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="review">
+      <div class="review__wrapper">
+        <div class="review__intro">
+          <h1 class="review__title visually-hidden">Оставьте свой отзыв</h1>
+          <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+            достопримечательностях</p>
+        </div>
+        <form class="review__form form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="form__input input-name">
+            <legend aria-label="Ввод имени">Представьтесь:</legend>
+            <label for="name">Имя*:</label>
+            <input type="text" id="name" value="Петр">
+            <label for="surname">Фамилия*:</label>
+            <input type="text" id="surname" value="Иванов">
+            <label for="patronymic">Отчество:</label>
+            <input type="text" id="patronymic" value="Александрович">
+          </fieldset>
+          <fieldset class="form__input input-contacts">
+            <legend aria-label="Ввод контактов">Контактная информация:</legend>
+            <label for="number">Контактный телефон*:</label>
+            <input type="tel" id="number" value="Введите телефон">
+            <label for="email">Электронная почта*:</label>
+            <input type="email" id="email" value="Введите e-mail">
+          </fieldset>
+          <fieldset class="form__input input-radio">
+            <legend aria-label="Оценка поездки">Ваше общее впечатление:</legend>
+            <ul class="input-radio__list radio-list">
+              <li class="radio-list__item">
+                <input type="radio" name="rating" value="good" id="good" checked>
+                <label for="good">Скорее положительное</label>
+              </li>
+              <li class="radio-list__item">
+                <input type="radio" name="rating" value="bad" id="bad">
+                <label for="bad">Скорее отрицательное</label>
+              </li>
+              <li class="radio-list__item">
+                <input type="radio" name="rating" value="uncertain" id="uncertain">
+                <label for="uncertain">Затрудняюсь ответить</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__input input-checkbox">
+            <legend aria-label="Выбор посещенных мест">Посещенные достопримечательности:</legend>
+            <ul class="input-checkbox__list checkbox-list">
+              <li class="checkbox-list__item">
+                <input type="checkbox" name="visited" id="devil-bridge" value="bridge" checked>
+                <label for="devil-bridge">Мост Дьявола</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input type="checkbox" name="visited" id="mountin-bell" value="mountin" checked>
+                <label for="mountin-bell">Гора Колокол</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input type="checkbox" name="visited" id="slide-park" value="park" checked>
+                <label for="slide-park">Слайд Парк</label>
+              </li>
+              <li class="checkbox-list__item">
+                <input type="checkbox" name="visited" id="red-rocks" value="rocks">
+                <label for="red-rocks">Красные скалы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="form__input input-textarea">
+            <label for="review-text">Опишите свои эмоции:</label>
+            <textarea id="review-text" name="review-text" placeholder="Опишите подробно свои восторги"></textarea>
+          </div>
+          <button class="form__button" type="submit">Отправить отзыв</button>
+        </form>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <h2 class="page-footer__title visually-hidden">Контакты</h2>
+        <p class="page-footer__hashtag">#VisitSedona</p>
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#">Мы в Твиттер</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="#">Мы на Ютуб</a>
+          </li>
+        </ul>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"><img
+            src="img/copyright-tmlacademy.svg" width="27" height="34" alt="Копирайт Академии"></a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
