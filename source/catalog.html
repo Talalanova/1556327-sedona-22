@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="review-form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="gallery">
+      <div class="gallery__wrapper">
+        <h1 class="gallery__title">Фото и видео</h1>
+        <p class="gallery__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <div class="gallery__list">
+          <div class="gallery__item">
+            <img class="gallery__pic" src="img/gallery-road.jpg" width="280" height="280" alt="Дорога на закате">
+            <div class="gallery__desc">
+              <p class="gallery__pic-title">Народные просторы</p>
+              <p class="gallery__author-name">Автор фото: Борис</p>
+            </div>
+            <div class="gallery__like-counter">
+              <button class="gallery__like-button like-button">
+                <span class="like-button__icon">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/></svg>
+                </span>
+                <span class="like-button__content">1350</span>
+              </button>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img class="gallery__pic" src="img/gallery-plant.jpg" width="280" height="280" alt="Кустарник с мелкими желтыми цветами">
+            <div class="gallery__desc">
+              <p class="gallery__pic-title">Местная растительность</p>
+              <p class="gallery__author-name">Автор фото: Сергей</p>
+            </div>
+            <div class="gallery__like-counter">
+              <button class="gallery__like-button like-button">
+                <span class="like-button__icon">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/></svg>
+                </span>
+                <span class="like-button__content">143</span>
+              </button>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img class="gallery__pic" src="img/gallery-forest.jpg" width="280" height="280" alt="Дорога среди хвойных деревьев">
+            <div class="gallery__desc">
+              <p class="gallery__pic-title">Дорога на север</p>
+              <p class="gallery__author-name">Автор фото: Петр</p>
+            </div>
+            <div class="gallery__like-counter">
+              <button class="gallery__like-button like-button">
+                <span class="like-button__icon">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/></svg>
+                </span>
+                <span class="like-button__content">96</span>
+              </button>
+            </div>
+          </div>
+          <div class="gallery__item">
+            <img class="gallery__pic" src="img/gallery-devil-bridge.jpg" width="280" height="280" alt="Красные скалы и каменный мост">
+            <div class="gallery__desc">
+              <p class="gallery__pic-title">Мост Дьявола</p>
+              <p class="gallery__author-name">Автор фото: Антон</p>
+            </div>
+            <div class="gallery__like-counter">
+              <button class="gallery__like-button like-button">
+                <span class="like-button__icon">
+                  <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/></svg>
+                </span>
+                <span class="like-button__content">254</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="gallery__present video-present">
+          <h2 class="video-present__title">Все еще сомневаетесь?</h2>
+          <p class="video-present__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <video class="video-present__content"><source src="#"></video>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <h2 class="page-footer__title visually-hidden">Контакты</h2>
+        <p class="page-footer__hashtag">#VisitSedona</p>
+        <ul class="page-footer__social-list social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#">Мы в Твиттер</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="#">Мы на Ютуб</a>
+          </li>
+        </ul>
+        <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"><img
+            src="img/copyright-tmlacademy.svg" width="27" height="34" alt="Копирайт Академии"></a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
+
