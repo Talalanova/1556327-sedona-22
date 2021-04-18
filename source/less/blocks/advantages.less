@@ -1,0 +1,37 @@
+.advantages {
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.advantages__title {
+    text-align: center;
+    font-size: 18px;
+    color: @main-text;
+}
+
+.advantages__sub-title {
+
+}
+.advantages__text {
+    color: @sub-text;
+    text-align: center;
+}
+
+.advantages__list {
+    .list-clean();
+}
+
+.advantages__color-wrapper {
+    background-color: @main-blue;
+    color: @contrast-text;
+    text-align: center;
+}
+
+.advantages__color-wrapper .advantages__text {
+    color: @contrast-text;
+}
+
+.advantages__number::after,
+.advantages__number::before {
+    content: "—";
+}

@@ -11,7 +11,9 @@
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -47,13 +49,15 @@
       </section>
       <section class="advantages">
         <div class="advantages__wrapper">
-          <h2 class="advantages__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="advantages__title">СЕДОНА — небольшой<br> городок в Аризоне, заслуживающий большего!</h2>
           <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--illustrate advantages__item--sublist">
-              <h3 class="advantages__title">Настоящий городок</h3>
-              <p class="advantages__number">№1</p>
-              <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              <div class="advantages__color-wrapper">
+                <h3 class="advantages__sub-title">Настоящий городок</h3>
+                <p class="advantages__number">№1</p>
+                <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
               <ul class="sub-list">
                 <li class="sub-list__item">
                   <h4 class="sub-list__title">Жилье</h4>
@@ -70,22 +74,24 @@
               </ul>
             </li>
             <li class="advantages__item advantages__item--illustrate">
-              <h3 class="advantages__title">Там есть мост дьявола</h3>
-              <p class="advantages__number">№2</p>
-              <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <div class="advantages__color-wrapper">
+                <h3 class="advantages__sub-title">Там есть мост дьявола</h3>
+                <p class="advantages__number">№2</p>
+                <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
             </li>
             <li class="advantages__item advantages__item--grey">
-              <h3 class="advantages__title">Небольшая площадь</h3>
+              <h3 class="advantages__sub-title">Небольшая площадь</h3>
               <p class="advantages__number">№3</p>
               <p class="advantages__text">Все интересные места находятся очень близко</p>
             </li>
             <li class="advantages__item advantages__item--grey">
-              <h3 class="advantages__title">Красивая дорога</h3>
+              <h3 class="advantages__sub-title">Красивая дорога</h3>
               <p class="advantages__number">№4</p>
               <p class="advantages__text">Ехать в Седону из Лас Вегаса совсем не скучно!</p>
             </li>
             <li class="advantages__item advantages__item--grey">
-              <h3 class="advantages__title">Мало туристов</h3>
+              <h3 class="advantages__sub-title">Мало туристов</h3>
               <p class="advantages__number">№5</p>
               <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
@@ -121,7 +127,9 @@
               <a class="social-list__link social-list__link--youtube" href="#">Мы на Ютуб</a>
             </li>
           </ul>
-          <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/copyright-tmlacademy.svg" width="27" height="34" alt="Копирайт Академии"></a>
+          <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/copyright-tmlacademy.svg" width="27" height="34" alt="Копирайт Академии">
+          </a>
         </div>
       </footer>
     </main>
