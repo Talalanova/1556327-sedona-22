@@ -1,37 +1,43 @@
 .advantages {
-    line-height: 26px;
     text-transform: uppercase;
-}
-
-.advantages__title {
     text-align: center;
-    font-size: 18px;
-    color: @main-text;
 }
 
+.advantages__title,
 .advantages__sub-title {
-
+  font-family: "PT Sans Bold";
+  font-size: 18px;
+  line-height: 26px;
 }
+
+.advantages__intro-text {
+  font-size: 14px;
+  line-height: 26px;
+  color: @sub-text;
+}
+
+
 .advantages__text {
-    color: @sub-text;
-    text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  color: @sub-text;
 }
 
 .advantages__list {
-    .list-clean();
+  .list-clean();
 }
 
 .advantages__color-wrapper {
-    background-color: @main-blue;
-    color: @contrast-text;
-    text-align: center;
+  background-color: @main-blue;
+  color: @contrast-text;
 }
 
 .advantages__color-wrapper .advantages__text {
-    color: @contrast-text;
+  color: @contrast-text;
 }
 
 .advantages__number::after,
 .advantages__number::before {
-    content: "—";
+  content: "—";
 }
+
