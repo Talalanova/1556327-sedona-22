@@ -11,10 +11,13 @@
         <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle toggle-menu" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <div class="toggle-menu__top"></div>
+          <div class="toggle-menu__middle"></div>
+          <div class="toggle-menu__bottom"></div>
         </button>
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper visually-hidden">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link">
@@ -53,7 +56,7 @@
           <p class="advantages__intro-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--illustrate advantages__item--sublist">
-              <div class="advantages__color-wrapper">
+              <div class="advantages__main-color-wrapper">
                 <h3 class="advantages__sub-title">Настоящий городок</h3>
                 <p class="advantages__number">№1</p>
                 <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -74,27 +77,29 @@
               </ul>
             </li>
             <li class="advantages__item advantages__item--illustrate">
-              <div class="advantages__color-wrapper">
+              <div class="advantages__main-color-wrapper">
                 <h3 class="advantages__sub-title">Там есть мост дьявола</h3>
                 <p class="advantages__number">№2</p>
                 <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
             </li>
-            <li class="advantages__item advantages__item--grey">
-              <h3 class="advantages__sub-title">Небольшая площадь</h3>
-              <p class="advantages__number">№3</p>
-              <p class="advantages__text">Все интересные места находятся очень близко</p>
-            </li>
-            <li class="advantages__item advantages__item--grey">
-              <h3 class="advantages__sub-title">Красивая дорога</h3>
-              <p class="advantages__number">№4</p>
-              <p class="advantages__text">Ехать в Седону из Лас Вегаса совсем не скучно!</p>
-            </li>
-            <li class="advantages__item advantages__item--grey">
-              <h3 class="advantages__sub-title">Мало туристов</h3>
-              <p class="advantages__number">№5</p>
-              <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
-            </li>
+            <div class="advantages__sub-color-wrapper">
+              <li class="advantages__item advantages__item--grey">
+                <h3 class="advantages__sub-title">Небольшая площадь</h3>
+                <p class="advantages__number">№3</p>
+                <p class="advantages__text">Все интересные места находятся очень близко</p>
+              </li>
+              <li class="advantages__item advantages__item--grey">
+                <h3 class="advantages__sub-title">Красивая дорога</h3>
+                <p class="advantages__number">№4</p>
+                <p class="advantages__text">Ехать в Седону из Лас Вегаса совсем не скучно!</p>
+              </li>
+              <li class="advantages__item advantages__item--grey">
+                <h3 class="advantages__sub-title">Мало туристов</h3>
+                <p class="advantages__number">№5</p>
+                <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -109,7 +114,7 @@
       <section class="map">
         <div class="map__wrapper">
           <h2 class="map__title visually-hidden">Карта</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52381.99622450971!2d-111.74432717110206!3d34.859373993200826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1618910347342!5m2!1sru!2sru" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52381.99622450971!2d-111.74432717110206!3d34.859373993200826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1618910347342!5m2!1sru!2sru" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </section>
       <footer class="page-footer">
@@ -123,7 +128,6 @@
                 <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11.3 0.166728C13 -0.333272 14.4 0.366728 15 1.26673C15.7 1.06673 16.4 0.766728 17.1 0.566728C17.1 1.36673 16.6 2.06673 16.2 2.26673C16.9 2.46673 17.5 1.76673 17.5 1.76673C17.3 2.76673 16.5 3.46673 15.9 3.76673C15.7 10.3667 12.6 14.7667 5.5 14.5667C5 14.5667 5.6 14.5667 5 14.5667C4.6 14.5667 0.7 14.1667 0 12.7667C2.3 12.9667 4 12.3667 4.8 11.6667C3.8 11.3667 2 11.1667 1.7 8.76673C2.1 8.86673 2.3 8.96673 3 8.86673C1.8 8.06673 0.4 7.36673 0.5 5.16673C0.8 5.46673 1.6 5.66673 1.9 5.66673C1.2 5.46673 -0.1 2.36673 1 0.866728C2.9 2.66673 4.8 4.36673 8.4 4.56673C8.5 2.26673 9.5 0.766728 11.3 0.166728Z" fill="white"/>
                   </svg>
-
               </a>
             </li>
             <li class="social-list__item">
@@ -140,7 +144,6 @@
                 <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8V11.1C0 12.7 1.3 14 2.8 14H17.1C18.7 14 19.9 12.7 19.9 11.2V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7L7 10.4Z" fill="white"/>
                   </svg>
-
               </a>
             </li>
           </ul>
