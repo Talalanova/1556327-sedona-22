@@ -6,7 +6,8 @@
 }
 
 .sub-list__title {
-  font-family: "PT Sans Bold";
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
 }
@@ -14,11 +15,12 @@
 .sub-list__text {
   font-size: 14px;
   line-height: 21px;
+  color: @sub-text;
 }
 
 .sub-list__title--motel::before {
   content: "";
-  background-image: url(../../img/icon-house.svg);
+  background-image: url(../img/icon-house.svg);
   background-repeat: no-repeat;
   position: absolute;
   width: 37px;
@@ -28,7 +30,7 @@
 
 .sub-list__title--gift::before {
   content: "";
-  background-image: url(../../img/icon-gift.svg);
+  background-image: url(../img/icon-gift.svg);
   background-repeat: no-repeat;
   position: absolute;
   width: 32px;
@@ -38,7 +40,7 @@
 
 .sub-list__title--food::before {
   content: "";
-  background-image: url(../../img/icon-burger.svg);
+  background-image: url(../img/icon-burger.svg);
   background-repeat: no-repeat;
   position: absolute;
   width: 40px;
