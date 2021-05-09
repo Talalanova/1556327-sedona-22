@@ -54,8 +54,16 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  @media (min-width: @tablet-width) {
-  flex-direction: row;
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+  }
+}
+
+.advantages__illustrate-wrapper {
+  display: flex;
+  flex-direction: column;
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
   }
 }
 
@@ -64,6 +72,12 @@
   color: @contrast-text;
   padding-top: 39px;
   padding-bottom: 35px;
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 .advantages__sub-color-wrapper {
   display: flex;
