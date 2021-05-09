@@ -51,6 +51,12 @@
 
 .advantages__list {
   .list-clean();
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+  flex-direction: row;
+  }
 }
 
 .advantages__main-color-wrapper {
@@ -59,7 +65,14 @@
   padding-top: 39px;
   padding-bottom: 35px;
 }
-
+.advantages__sub-color-wrapper {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .advantages__main-color-wrapper .advantages__text {
   color: @contrast-text;
 }

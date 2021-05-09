@@ -3,6 +3,12 @@
   position: relative;
   margin-left: 69px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .sub-list__title {
