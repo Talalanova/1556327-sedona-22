@@ -2,13 +2,24 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+  }
 }
 
 .site-list__item {
   background-color: @main-blue;
+  @media (min-width: @tablet-width) {
+    background-color: @contrast-text;
+  }
 }
 
 .site-list__link {
   color: @contrast-text;
   text-decoration: none;
+  @media (min-width: @tablet-width) {
+    color: @main-text;
+  }
 }

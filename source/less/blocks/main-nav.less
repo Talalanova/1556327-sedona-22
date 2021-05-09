@@ -1,6 +1,5 @@
 .main-nav {
-  display: flex;
-  flex-direction: row;
+
 }
 
 .main-nav__list {
@@ -15,4 +14,7 @@
   margin: 0;
   margin-right: 19px;
   background-color: @contrast-text;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
