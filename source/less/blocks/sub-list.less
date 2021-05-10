@@ -1,8 +1,19 @@
 .sub-list {
   .list-clean();
   position: relative;
-  margin-left: 69px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 55px;
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    margin-top: 90px;
+    margin-left: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
 }
 
 .sub-list__title {
@@ -10,6 +21,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
 }
 
 .sub-list__text {
@@ -26,6 +40,10 @@
   width: 37px;
   height: 39px;
   left: -55px;
+  @media (min-width: @tablet-width) {
+    top: -55px;
+    left: 25px;
+  }
 }
 
 .sub-list__title--gift::before {
@@ -36,6 +54,10 @@
   width: 32px;
   height: 38px;
   left: -55px;
+  @media (min-width: @tablet-width) {
+    top: -55px;
+    left: 25px;
+  }
 }
 
 .sub-list__title--food::before {
@@ -46,4 +68,8 @@
   width: 40px;
   height: 35px;
   left: -55px;
+  @media (min-width: @tablet-width) {
+    top: -55px;
+    left: 25px;
+  }
 }

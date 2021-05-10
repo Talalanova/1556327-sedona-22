@@ -1,10 +1,15 @@
 .page-header {
   display: flex;
-  justify-content: flex-end;
-  height: 56px;
+  flex-direction: column;
+  position: relative;
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+    }
 }
 
 .page-header__logo {
-  margin-right: 109px;
   position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  height: 84px;
 }
