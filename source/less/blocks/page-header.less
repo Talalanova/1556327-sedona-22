@@ -1,11 +1,15 @@
 .page-header {
   display: flex;
   flex-direction: column;
+  position: relative;
     @media (min-width: @tablet-width) {
       flex-direction: row;
     }
 }
 
 .page-header__logo {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
   height: 84px;
 }

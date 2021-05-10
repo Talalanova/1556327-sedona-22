@@ -1,8 +1,11 @@
 .site-list {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   font-weight: 700;
   line-height: 40px;
   @media (min-width: @tablet-width) {
+    flex-direction: row;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
@@ -10,9 +13,16 @@
 }
 
 .site-list__item {
-  background-color: @main-blue;
+  background-color: @main-blue;  
   @media (min-width: @tablet-width) {
     background-color: @contrast-text;
+    margin-right: 80px;
+    margin-left: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    background-color: @contrast-text;
+    margin-right: 160px;
+    margin-left: 40px;
   }
 }
 
