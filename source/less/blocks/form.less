@@ -1,5 +1,62 @@
+.form {
+  display: flex;
+  flex-direction: column;
+    @media (min-width: @tablet-width) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+}
+.form__fieldset--rating {
+  @media (min-width: @tablet-width) {
+    order: -1;
+    width: 45%;
+  }
+}
+
+.form__fieldset--fullname {
+  @media (min-width: @tablet-width) {
+    width: 45%;
+  }
+} 
+
+.form__fieldset--contacts {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+
+}
+
+.form__fieldset--visited {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.form__fieldset--textarea {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
 .form__list {
   .list-clean();
+}
+
+.form__list--visited {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .form__legend {
