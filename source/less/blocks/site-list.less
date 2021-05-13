@@ -13,11 +13,13 @@
 }
 
 .site-list__item {
-  background-color: @main-blue;  
+  background-color: @main-blue;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
   @media (min-width: @tablet-width) {
     background-color: @contrast-text;
     margin-right: 80px;
     margin-left: 20px;
+    box-shadow: none;
   }
   @media (min-width: @desktop-width) {
     background-color: @contrast-text;
@@ -29,7 +31,24 @@
 .site-list__link {
   color: @contrast-text;
   text-decoration: none;
+  display: block;
+  &:hover {
+    background-color: @main-blue-hover;
+  }
+  &:active {
+    background-color: @main-blue-down;
+    color: rgba((@contrast-text), 0.3);
+  }
   @media (min-width: @tablet-width) {
     color: @main-text;
+    &:hover {
+      background-color: @contrast-text;
+      color: @main-blue;
+    }
+    &:active {
+      background-color: @contrast-text;
+      color: rgba((@main-text), 0.3);
+    }
   }
+
 }

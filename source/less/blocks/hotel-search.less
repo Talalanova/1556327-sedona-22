@@ -23,9 +23,22 @@
   color: @contrast-text;
   text-decoration: none;
   text-align: center;
-  padding: 16px 46px;
+  padding: 16px 47px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 49px;
+
+  &:hover {
+    background-color: @main-blue-hover;
+  }
+
+  &:active {
+    background-color: @main-blue-down;
+    color: rgba((@contrast-text), 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 16px 136px;
+  }
 }
