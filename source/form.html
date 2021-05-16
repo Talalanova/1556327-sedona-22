@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <div class="page__wrapper container">
-    <header class="page-header">      
+    <header class="page-header">
         <nav class="main-nav">
           <div class="main-nav__wrapper container">
             <ul class="main-nav__list site-list">
@@ -35,26 +35,30 @@
                 </a>
               </li>
             </ul>
-          </div>  
+          </div>
           <a class="page-header__logo">
-            <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img src="img/logotype-mobile.svg" alt="Город «Седона»">
+            </picture>
           </a>
           <button class="main-nav__toggle toggle-menu" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <div class="toggle-menu__top"></div>
             <div class="toggle-menu__middle"></div>
             <div class="toggle-menu__bottom"></div>
-          </button>          
+          </button>
       </nav>
     </header>
     <main class="page-main">
       <section class="review">
         <div class="review__wrapper">
           <div class="review__intro">
-            <h1 class="review__title">Оставьте свой отзыв</h1>
-            <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-              достопримечательностях</p>
+            <img src="img/intro-bg-SEDONA.svg">
           </div>
+          <h1 class="review__title">Оставьте свой отзыв</h1>
+          <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
           <form class="review__form form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="form__fieldset form__fieldset--fullname">
               <legend class="form__legend" aria-label="Ввод имени">Представьтесь:</legend>

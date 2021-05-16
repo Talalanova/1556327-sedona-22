@@ -35,7 +35,11 @@
             </ul>
           </div>
           <a class="page-header__logo">
-            <img src="img/logotype-mobile.svg" width="102" height="84" alt="Город «Седона»">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img src="img/logotype-mobile.svg" alt="Город «Седона»">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -60,8 +64,11 @@
                     <p class="advantages__number">№1</p>
                     <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
                   </div>
-                  <img class="advantages__pic" src="img/photo-city.jpg" width="320" height="260" alt="Фото города">
-
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                    <img class="advantages__pic" src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x" alt="Фото города">
+                  </picture>
                 <ul class="sub-list">
                   <li class="sub-list__item">
                     <h4 class="sub-list__title sub-list__title--motel">Жилье</h4>
@@ -78,7 +85,11 @@
                 </ul>
               </li>
               <li class="advantages__item advantages__item--illustrate advantages__item--change-order">
-                  <img class="advantages__pic" src="img/photo-bridge.jpg" width="320" height="260" alt="Фото моста">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="advantages__pic" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x" alt="Фото моста">
+                </picture>
                   <div class="advantages__main-color-wrapper">
                     <h3 class="advantages__sub-title">Там есть мост дьявола</h3>
                     <p class="advantages__number">№2</p>
