@@ -5,7 +5,10 @@
   font-weight: 700;
   line-height: 40px;
   @media (min-width: @tablet-width) {
+    width: 768px;
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 25px;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
@@ -19,14 +22,16 @@
   padding-bottom: 7px;
   @media (min-width: @tablet-width) {
     background-color: @contrast-text;
-    margin-right: 80px;
-    margin-left: 20px;
     box-shadow: none;
+    width: 150px;
+    margin-bottom: 5px;
+    &:nth-child(2) {
+      margin-right: 161px;
+      margin-left: 7px;
+    }
   }
   @media (min-width: @desktop-width) {
     background-color: @contrast-text;
-    margin-right: 160px;
-    margin-left: 40px;
   }
 }
 
