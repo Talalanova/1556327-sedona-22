@@ -56,8 +56,22 @@
   .list-clean();
   display: grid;
   grid-template-columns: 1fr;
+  position: relative;
     @media (min-width: @tablet-width) {
       grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.advantages__item--sublist::before {
+  @media (max-width: 767px) {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 37px;
+  background-image: url(../img/down-triangle.svg);
+  background-repeat: no-repeat;
+  left: 0;
+  top: -15px;
   }
 }
 
