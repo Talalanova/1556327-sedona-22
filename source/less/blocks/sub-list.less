@@ -12,6 +12,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     height: 200px;
     margin-top: 90px;
+    margin-bottom: 29px;
     margin-left: 0;
     grid-column-start: 1;
     grid-column-end: 4;
@@ -39,6 +40,10 @@
   line-height: 21px;
   color: @sub-text;
   margin: 0;
+    @media (min-width: @tablet-width) {
+      text-align: center;
+      padding: 8px 30px 0px 20px;
+    }
 }
 
 .sub-list__title--motel::before {
@@ -51,8 +56,14 @@
   left: -47px;
   top: 20px;
   @media (min-width: @tablet-width) {
-    top: -55px;
-    left: 25px;
+    top: -96px;
+    left: 90px;
+    background-size: 75px 72px;
+    width: 75px;
+    height: 72px;
+  }
+  @media (min-width: @desktop-width) {
+    left: 160px;
   }
 }
 
@@ -66,8 +77,15 @@
   left: -44px;
   top: 150px;
   @media (min-width: @tablet-width) {
-    top: -55px;
-    left: 25px;
+    top: -99px;
+    left: 92px;
+    background-size: 75px 72px;
+    width: 75px;
+    height: 72px;
+  }
+  @media (min-width: @desktop-width) {
+    left: 160px;
+    top: -96px;
   }
 }
 
@@ -81,8 +99,15 @@
   left: -50px;
   top: 266px;
   @media (min-width: @tablet-width) {
-    top: -55px;
-    left: 25px;
+    top: -97px;
+    left: 90px;
+    background-size: 75px 72px;
+    width: 75px;
+    height: 72px;
+  }
+  @media (min-width: @desktop-width) {
+    left: 160px;
+    top: -93px;
   }
 }
 
