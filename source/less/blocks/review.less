@@ -1,22 +1,41 @@
 .review__intro {
-  text-transform: uppercase;
   text-align: center;
-  background-image: url("../img/intro-triangle.svg"), url("../img/intro-bg-SEDONA-mobile.svg"), url("../img/intro-bg-desktop.jpg");
+  height: 158px;
+  background-image: url("../img/intro-triangle.svg"), url("../img/form-intro-bg.jpg");
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-triangle.svg"), url("../img/form-intro-bg@2x.jpg");
+  }
+  @media (min-width: @tablet-width) {
+    background-image: url(../img/intro-big-triangle.svg), url(../img/form-intro-tablet.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-big-triangle.svg"), url("../img/form-intro-tablet@2x.jpg");
+    }
+    height: 290px;
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url(../img/intro-huge-triangle.svg), url(../img/form-intro-desktop.jpg);
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-huge-triangle.svg"), url("../img/form-intro-desktop@2x.jpg");
+    }
+    height: 301px;
+  }
   background-repeat: no-repeat;
-  background-position: 50% 103px, 50% 50px, top;
-  background-size: 320px 57px, 230px 40px, 320px 160px;
-  padding-top: 180px;
-  height: 160px;
+  background-position: 0 bottom, top;
 }
 
 .review__title {
+  padding-top: 50px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .review__text {
   font-size: 14px;
   line-height: 24px;
   color: @sub-text;
+  text-transform: uppercase;
+  text-align: center;
 }
