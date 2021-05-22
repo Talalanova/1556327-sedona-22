@@ -55,7 +55,7 @@
       <section class="review">
         <div class="review__wrapper">
           <div class="review__intro">
-            <img src="img/intro-bg-SEDONA.svg">
+            <img class="review__pic" src="img/intro-bg-SEDONA.svg">
           </div>
           <h1 class="review__title">Оставьте свой отзыв</h1>
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
@@ -79,11 +79,13 @@
               <legend class="form__legend" aria-label="Ввод контактов">Контактная информация:</legend>
               <div class="form__field form__field--phone">
                 <label class="form__label" for="number">Контактный телефон*:</label>
-                <input class="form__control form__control--text" type="tel" id="number" name="number" value="Введите телефон">
+                <input class="form__control form__control--text form__control--phone" type="tel" id="number" name="number" value="Введите телефон">
+                <span class="form__icon"></span>
               </div>
               <div class="form__field form__field--email">
                 <label class="form__label" for="email">Электронная почта*:</label>
-                <input class="form__control form__control--text" type="email" id="email" name="email" value="Введите e-mail">
+                <input class="form__control form__control--text form__control--mail" type="email" id="email" name="email" value="Введите e-mail">
+                <span class="form__icon"></span>
               </div>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--rating">
@@ -91,15 +93,15 @@
               <ul class="form__list form__list--rating">
                 <li class="form__item form__item--radio">
                   <input class="visually-hidden form__radio" type="radio" name="rating" value="good" id="good" checked>
-                  <label class="form__label form__label--text" for="good">Скорее положительное</label>
+                  <label class="form__label form__label--text form__label--radio" for="good">Скорее положительное</label>
                 </li>
                 <li class="form__item form__item--radio">
                   <input class="visually-hidden form__radio" type="radio" name="rating" value="bad" id="bad">
-                  <label class="form__label form__label--text" for="bad">Скорее отрицательное</label>
+                  <label class="form__label form__label--text form__label--radio" for="bad">Скорее отрицательное</label>
                 </li>
                 <li class="form__item form__item--radio">
                   <input class="visually-hidden form__radio" type="radio" name="rating" value="uncertain" id="uncertain">
-                  <label class="form__label form__label--text" for="uncertain">Затрудняюсь ответить</label>
+                  <label class="form__label form__label--text form__label--radio" for="uncertain">Затрудняюсь ответить</label>
                 </li>
               </ul>
             </fieldset>
@@ -108,25 +110,25 @@
               <ul class="form__list form__list--visited">
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox" type="checkbox" name="visited" id="devil-bridge" value="bridge" checked>
-                  <label class="form__label form__label--text" for="devil-bridge">Мост Дьявола</label>
+                  <label class="form__label form__label--text form__label--checkbox" for="devil-bridge">Мост Дьявола</label>
                 </li>
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox" type="checkbox" name="visited" id="mountin-bell" value="mountin" checked>
-                  <label class="form__label form__label--text" for="mountin-bell">Гора Колокол</label>
+                  <label class="form__label form__label--text form__label--checkbox" for="mountin-bell">Гора Колокол</label>
                 </li>
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox" type="checkbox" name="visited" id="slide-park" value="park" checked>
-                  <label class="form__label form__label--text" for="slide-park">Слайд Парк</label>
+                  <label class="form__label form__label--text form__label--checkbox" for="slide-park">Слайд Парк</label>
                 </li>
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox" type="checkbox" name="visited" id="red-rocks" value="rocks">
-                  <label class="form__label form__label--text" for="red-rocks">Красные скалы</label>
+                  <label class="form__label form__label--text form__label--checkbox" for="red-rocks">Красные скалы</label>
                 </li>
               </ul>
             </fieldset>
             <div class="form__fieldset form__fieldset--textarea">
               <label class="form__legend" for="review-text">Опишите свои эмоции:</label>
-              <textarea class="form__control form__control--text" id="review-text" name="review-text" placeholder="Опишите подробно свои восторги"></textarea>
+              <textarea class="form__control form__control--text form__control--textarea" id="review-text" name="review-text" placeholder="Опишите подробно свои восторги"></textarea>
             </div>
             <button class="form__button" type="submit">Отправить отзыв</button>
           </form>
