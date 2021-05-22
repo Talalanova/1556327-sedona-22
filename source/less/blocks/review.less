@@ -21,8 +21,17 @@
   }
   background-repeat: no-repeat;
   background-position: 0 bottom, top;
+  background-size: auto, cover;
 }
 
+.review__pic {
+  margin-top: 50px;
+  @media (min-width: @tablet-width) {
+    width: 457px;
+    height: 78px;
+    margin-top: 90px;
+  }
+}
 .review__title {
   padding-top: 50px;
   font-weight: 700;
@@ -30,6 +39,10 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
 .review__text {
