@@ -1,3 +1,8 @@
+
+.form__list {
+  .list-clean();
+}
+
 .form {
   padding: 0 20px;
   margin: 0;
@@ -11,22 +16,88 @@
       padding-right: 60px;
       padding-left: 60px;
     }
+    @media (min-width: @desktop-width) {
+      padding-left: 120px;
+      padding-right: 120px;
+    }
 }
 
 .form__fieldset--rating {
   @media (min-width: @tablet-width) {
     order: -1;
-    width: 45%;
+    width: 50%;
     margin-top: 0;
   }
   margin-top: 22px;
 }
 
+.form__fieldset--rating .form__legend {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 75px;
+    text-align: left;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 77px;
+  }
+}
+.form__list--rating {
+  padding-top: 18px;
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.form__list--rating .form__item {
+  margin-bottom: 43px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 51px;
+  }
+}
+
 .form__fieldset--fullname {
   @media (min-width: @tablet-width) {
-    width: 45%;
+    width: 50%;
   }
   margin-bottom: 25px;
+}
+
+.form__field--name {
+  @media (min-width: @tablet-width) {
+  margin-left: 57px;
+  margin-top: 36px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 77px;
+  }
+}
+
+.form__field--surname {
+  @media (min-width: @tablet-width) {
+  margin-left: 57px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 77px;
+  }
+}
+
+.form__field--patronymic {
+  @media (min-width: @tablet-width) {
+  margin-left: 57px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 77px;
+  }
+}
+
+.form__fieldset--fullname .form__legend {
+  text-align: center;
+  @media (min-width: @tablet-width) {
+  margin-left: 57px;
+  text-align: left;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 77px;
+  }
 }
 
 .form__fieldset--contacts {
@@ -34,47 +105,118 @@
   flex-direction: column;
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 27px;
   }
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.form__fieldset--contacts .form__label {
+  padding-left: 22px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+  @media (min-width: @desktop-width) {
+    width: auto;
+    padding-left: 0;
+    padding-top: 10px;
+    margin-top: 0;
   }
 
+}
+.form__icon {
+  width: 58px;
+  height: 58px;
+  background-color: @radio-checkbox-hover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: none;
+}
+
+.form__field--phone .form__icon {
+  background-image: url("../img/phone.svg");
+}
+
+.form__field--email .form__icon {
+  background-image: url("../img/mail.svg");
+}
+
+.form__field--phone,
+.form__field--email {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: @tablet-width) {
+    margin-top: 5px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 55px;
+  }
 }
 
 .form__fieldset--visited {
+  margin-top: 14px;
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 30px;
   }
-  margin-top: 14px;
 }
 
 .form__fieldset--textarea {
+  margin-top: 7px;
   @media (min-width: @tablet-width) {
     width: 100%;
+    margin-top: 20px;
   }
-  margin-top: 7px;
+  @media (min-width: @desktop-width) {
+   text-align: center;
+  }
 }
 
 .form__fieldset--textarea .form__legend {
   margin-left: 33px;
-}
-
-.form__list {
-  .list-clean();
+  @media (min-width: @tablet-width) {
+    margin-left: 199px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 
 .form__list--visited {
+  padding-top: 15px;
+  padding-left: 5px;
   display: flex;
   flex-direction: column;
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 38px;
+    padding-left: 100px;
+    padding-right: 25px;
   }
   @media (min-width: @desktop-width) {
-    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
-  padding-top: 15px;
-  padding-left: 5px;
+}
+
+.form__list--visited .form__item {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    margin-bottom: 63px;
+  }
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
+}
+
+.form__list--visited .form__label {
+  padding-right: 0;
 }
 
 .form__fieldset {
@@ -115,11 +257,10 @@
   padding-right: 14px;
 }
 
-.form__fieldset--contacts .form__label {
-  padding-left: 22px;
-  margin-top: -5px;
-  margin-bottom: 10px;
+.form__item label {
+  position: relative;
 }
+
 .form__control::placeholder {
   opacity: 1;
   color: @main-text;
@@ -156,6 +297,20 @@
 .form__control--phone,
 .form__control--mail {
   width: 222px;
+  @media (min-width: @tablet-width) {
+   width: 590px;
+  }
+  @media (min-width: @desktop-width) {
+   width: 258px;
+  }
+}
+
+.form__control--textarea {
+  height: 160px;
+  margin-top: 25px;
+  @media (min-width: @tablet-width) {
+    margin-top: 70px;
+  }
 }
 
 .form__button {
@@ -173,7 +328,15 @@
   line-height: 26px;
   margin-top: 38px;
   margin-bottom: 40px;
-
+  @media (min-width: @tablet-width) {
+    margin-top: 41px;
+    padding: 15px 71px;
+    margin-bottom: 60px;
+  }
+  @media (min-width: @desktop-width) {
+  padding: 15px 150px;
+  margin-bottom: 68px;
+  }
   &:hover {
     background-color: @main-blue-hover;
   }
@@ -184,8 +347,21 @@
   }
 }
 
-.form__item label {
-  position: relative;
+.form__necessarily {
+  display: none;
+  text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    display: block;
+    margin-top: 60px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+.form__hidden {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 // Радио кнопки
@@ -219,16 +395,6 @@
 
 .form__radio + .form__label--radio:hover::before {
   background-color: @radio-checkbox-hover;
-}
-
-
-
-.form__list--rating {
-  padding-top: 18px;
-}
-
-.form__list--rating .form__item {
-  margin-bottom: 43px;
 }
 
 // Чекбоксы
@@ -265,30 +431,3 @@
   background-color: @radio-checkbox-hover;
 }
 
-.form__icon {
-  width: 58px;
-  height: 58px;
-  background-color: @radio-checkbox-hover;
-  background-repeat: no-repeat;
-  background-position: center;
-  flex: none;
-}
-
-.form__field--phone,
-.form__field--email {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.form__field--phone .form__icon {
-  background-image: url("../img/phone.svg");
-}
-
-.form__field--email .form__icon {
-  background-image: url("../img/mail.svg");
-}
-
-.form__control--textarea {
-  height: 160px;
-  margin-top: 25px;
-}

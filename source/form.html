@@ -75,7 +75,7 @@
             <fieldset class="form__fieldset form__fieldset--contacts">
               <legend class="form__legend" aria-label="Ввод контактов">Контактная информация:</legend>
               <div class="form__field form__field--phone">
-                <label class="form__label" for="number">Контактный телефон*:</label>
+                <label class="form__label" for="number"><span class="form__hidden">Контактный</span> телефон*:</label>
                 <input class="form__control form__control--text form__control--phone" type="tel" id="number" name="number" value="Введите телефон">
                 <span class="form__icon"></span>
               </div>
@@ -103,7 +103,7 @@
               </ul>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--visited">
-              <legend class="form__legend" aria-label="Выбор посещенных мест">Посещенные достопримечательности:</legend>
+              <legend class="form__legend" aria-label="Выбор посещенных мест">Посещенные<br>достопримечательности:</legend>
               <ul class="form__list form__list--visited">
                 <li class="form__item">
                   <input class="visually-hidden form__checkbox" type="checkbox" name="visited" id="devil-bridge" value="bridge" checked>
@@ -128,6 +128,7 @@
               <textarea class="form__control form__control--text form__control--textarea" id="review-text" name="review-text" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
             <button class="form__button" type="submit">Отправить отзыв</button>
+            <span class="form__necessarily">* — Обязательные поля</span>
           </form>
         </div>
       </section>
