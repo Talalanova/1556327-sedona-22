@@ -4,10 +4,13 @@
 }
 
 .form {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
   margin: 0;
   display: flex;
   flex-direction: column;
+  border-top: 1px solid @radio-checkbox-hover;
     @media (min-width: @tablet-width) {
       flex-direction: row;
       flex-wrap: wrap;
@@ -15,6 +18,7 @@
       padding-top: 48px;
       padding-right: 60px;
       padding-left: 60px;
+      border-top: none;
     }
     @media (min-width: @desktop-width) {
       padding-left: 120px;
@@ -58,7 +62,6 @@
   @media (min-width: @tablet-width) {
     width: 50%;
   }
-  margin-bottom: 25px;
 }
 
 .form__field--name {
@@ -88,6 +91,19 @@
     margin-left: 77px;
   }
 }
+.form__fieldset--fullname::before {
+  display: none;
+  @media (min-width: @tablet-width) {
+  content: "";
+  background-color: @radio-checkbox-hover;
+  height: 292px;
+  width: 1px;
+  position: absolute;
+  top: 605px;
+  left: 458px;
+  display: block;
+  }
+}
 
 .form__fieldset--fullname .form__legend {
   text-align: center;
@@ -103,13 +119,47 @@
 .form__fieldset--contacts {
   display: flex;
   flex-direction: column;
+  margin-top: 25px;
+  position: relative;
   @media (min-width: @tablet-width) {
     width: 100%;
-    margin-top: 27px;
+    margin-top: 37px;
   }
   @media (min-width: @desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.form__fieldset--contacts::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  top: 942px;
+  left: 180px;
+  background-color: @radio-checkbox-hover;
+  @media (min-width: @tablet-width) {
+    width: 123px;
+    height: 1px;
+    top: -35px;
+    left: 0;
+  }
+}
+
+.form__fieldset--contacts::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  top: 1230px;
+  left: 180px;
+  background-color: @radio-checkbox-hover;
+  @media (min-width: @tablet-width) {
+    width: 123px;
+    height: 1px;
+    top: -35px;
+    left: 525px;
   }
 }
 
@@ -165,14 +215,75 @@
   }
 }
 
+.form__fieldset--visited::before {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  top: 1515px;
+  left: 144px;
+  background-color: @radio-checkbox-hover;
+  @media (min-width: @tablet-width) {
+    width: 123px;
+    height: 1px;
+    top: 1300px;
+    left: 659px;
+  }
+}
+
+.form__fieldset--visited::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  top: 1927px;
+  left: 144px;
+  background-color: @radio-checkbox-hover;
+  @media (min-width: @tablet-width) {
+    width: 123px;
+    height: 1px;
+    top: 1300px;
+    left: 145px;
+  }
+}
+
 .form__fieldset--textarea {
   margin-top: 7px;
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-top: 20px;
+    position: relative;
   }
   @media (min-width: @desktop-width) {
    text-align: center;
+  }
+}
+
+.form__fieldset--textarea::before {
+  display: none;
+  @media (min-width: @tablet-width) {
+    content: "";
+    background-color: @radio-checkbox-hover;
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 12px;
+    left: 20px;
+    display: block;
+  }
+}
+
+.form__fieldset--textarea::after {
+  display: none;
+  @media (min-width: @tablet-width) {
+    content: "";
+    background-color: @radio-checkbox-hover;
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 12px;
+    left: 525px;
+    display: block;
   }
 }
 
@@ -307,9 +418,10 @@
 
 .form__control--textarea {
   height: 160px;
-  margin-top: 25px;
+  margin-top: 13px;
+  padding-top: 13px;
   @media (min-width: @tablet-width) {
-    margin-top: 70px;
+    margin-top: 60px;
   }
 }
 
@@ -326,10 +438,10 @@
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin-top: 38px;
+  margin-top: 49px;
   margin-bottom: 40px;
   @media (min-width: @tablet-width) {
-    margin-top: 41px;
+    margin-top: 51px;
     padding: 15px 71px;
     margin-bottom: 60px;
   }
@@ -352,7 +464,7 @@
   text-transform: uppercase;
   @media (min-width: @tablet-width) {
     display: block;
-    margin-top: 60px;
+    margin-top: 70px;
     font-size: 14px;
     line-height: 26px;
   }
