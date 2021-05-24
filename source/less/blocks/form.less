@@ -59,6 +59,7 @@
 }
 
 .form__fieldset--fullname {
+  position: relative;
   @media (min-width: @tablet-width) {
     width: 50%;
   }
@@ -99,8 +100,8 @@
   height: 292px;
   width: 1px;
   position: absolute;
-  top: 605px;
-  left: 458px;
+  top: -42px;
+  left: 0px;
   display: block;
   }
 }
@@ -136,14 +137,20 @@
   content: "";
   width: 320px;
   height: 1px;
-  top: 942px;
-  left: 180px;
+  top: -70px;
+  left: -20px;
   background-color: @radio-checkbox-hover;
   @media (min-width: @tablet-width) {
     width: 123px;
     height: 1px;
     top: -35px;
     left: 0;
+  }
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    height: 1px;
+    top: -35px;
+    left: 680px;
   }
 }
 
@@ -152,14 +159,20 @@
   content: "";
   width: 320px;
   height: 1px;
-  top: 1230px;
-  left: 180px;
+  top: 220px;
+  left: -20px;
   background-color: @radio-checkbox-hover;
   @media (min-width: @tablet-width) {
     width: 123px;
     height: 1px;
     top: -35px;
     left: 525px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    height: 1px;
+    top: -35px;
+    left: 0px;
   }
 }
 
@@ -209,6 +222,7 @@
 
 .form__fieldset--visited {
   margin-top: 14px;
+  position: relative;
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-top: 30px;
@@ -220,14 +234,20 @@
   content: "";
   width: 320px;
   height: 1px;
-  top: 1515px;
-  left: 144px;
+  top: -85px;
+  left: -20px;
   background-color: @radio-checkbox-hover;
   @media (min-width: @tablet-width) {
     width: 123px;
     height: 1px;
-    top: 1300px;
-    left: 659px;
+    top: -50px;
+    left: 525px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    height: 1px;
+    top: -50px;
+    left: 0px;
   }
 }
 
@@ -236,14 +256,20 @@
   content: "";
   width: 320px;
   height: 1px;
-  top: 1927px;
-  left: 144px;
+  top: 327px;
+  left: -20px;
   background-color: @radio-checkbox-hover;
   @media (min-width: @tablet-width) {
     width: 123px;
     height: 1px;
-    top: 1300px;
-    left: 145px;
+    top: -50px;
+    left: 0px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    height: 1px;
+    top: -50px;
+    left: 680px;
   }
 }
 
@@ -271,6 +297,12 @@
     left: 20px;
     display: block;
   }
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    height: 1px;
+    top: 15px;
+    left: 0px;
+  }
 }
 
 .form__fieldset--textarea::after {
@@ -284,6 +316,12 @@
     top: 12px;
     left: 525px;
     display: block;
+  }
+  @media (min-width: @desktop-width) {
+    width: 280px;
+    height: 1px;
+    top: 15px;
+    left: 680px;
   }
 }
 
