@@ -3,4 +3,49 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
+  @media (min-width: @tablet-width) {
+    width: 54px;
+    margin-right: -8px;
+  }
+  @media (min-width: @desktop-width) {
+    color: @contrast-text;
+  }
+}
+
+.like-button {
+  border: none;
+  padding: 0;
+  background-color: @contrast-text;
+  @media (min-width: @tablet-width) {
+    background-color: @radio-checkbox;
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: @desktop-width) {
+    background-color: rgba((@main-text), 0.1);
+
+  }
+}
+
+.like-button__icon {
+  margin-right: 10px;
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    margin-right: -5px;
+    background-color: @radio-checkbox;
+  }
+  @media (min-width: @desktop-width) {
+    background-color: rgba((@main-text), 0.1);
+    width: 23px;
+    margin-right: -5px;
+  }
+}
+
+.like-button__svg {
+  fill: @main-text;
+  opacity: 0.3;
+  @media (min-width: @desktop-width) {
+    fill: @contrast-text;
+    opacity: 1;
+  }
 }
