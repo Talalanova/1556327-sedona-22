@@ -14,17 +14,23 @@
   margin: 0;
   margin-left: 210px;
   background-color: @contrast-text;
+
   @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-// Внешний вид кнопки открывающей/закрывающей меню
+.main-nav--closed .main-nav__list {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
 
+// Внешний вид кнопки открывающей/закрывающей меню
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 160px;
+  bottom: -30px;
   margin: 17px;
   width: 22px;
   height: 4px;
@@ -32,15 +38,23 @@
   box-shadow: 0 8px 0 0 @main-blue, 0 16px 0 0 @main-blue;
 }
 
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: rgba((@main-blue), 0.6);
+  box-shadow: 0 8px 0 0 rgba((@main-blue), 0.6), 0 16px 0 0 rgba((@main-blue), 0.6);
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3;
+}
+
 .main-nav--opened .main-nav__toggle {
-  display: none;
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 25px;
     right: 15px;
-    width: 22px;
+    width: 24px;
     height: 4px;
     background-color: @contrast-text;
   }
@@ -55,3 +69,12 @@
   }
 }
 
+.main-nav--opened .main-nav__toggle:hover::before,
+.main-nav--opened .main-nav__toggle:hover::after {
+  background-color: rgba((@contrast-text), 0.6);
+}
+
+.main-nav--opened .main-nav__toggle:active::before,
+.main-nav--opened .main-nav__toggle:active::after {
+  opacity: 0.3;
+}

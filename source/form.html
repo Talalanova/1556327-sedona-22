@@ -13,7 +13,9 @@
 <body class="page__body">
   <div class="page__wrapper container">
     <header class="page-header">
-      <nav class="main-nav main-nav--opened">
+      <!-- <nav class="main-nav main-nav--closed"> <!-- Закрытое меню -->
+      <!-- <nav class="main-nav main-nav--opened"> <!-- Открытое меню -->
+      <nav class="main-nav"> <!-- Меню без JS -->
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -22,12 +24,12 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__link">
+              <a href="catalog.html" class="site-list__link">
                 Фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__link">
+              <a href="form.html" class="site-list__link">
                 Форма отзыва
               </a>
             </li>
@@ -38,23 +40,25 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-            <img src="img/logotype-mobile.svg" alt="Город «Седона»">
-          </picture>
-        </a>
+        <div class="page-header__logo">
+          <a href="/" class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+              <img src="img/logotype-mobile.svg" alt="Город «Седона»">
+            </picture>
+          </a>
+        </div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-    </nav>
+      </nav>
     </header>
     <main class="page-main">
       <section class="review">
         <div class="review__wrapper">
           <div class="review__intro">
-            <img class="review__pic" src="img/intro-bg-SEDONA.svg">
+            <img class="review__pic" src="img/intro-bg-SEDONA.svg" alt="Седона">
           </div>
           <h1 class="review__title">Оставьте свой отзыв</h1>
           <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
