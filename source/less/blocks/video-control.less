@@ -1,0 +1,138 @@
+.video-control {
+  position: absolute;
+  bottom: -45px;
+  left: 20px;
+
+  @media (min-width: @tablet-width) {
+    bottom: -20px;
+    left: 60px;
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    bottom: -20px;
+    left: 183px;
+    display: flex;
+  }
+}
+
+.video-control__bar {
+  background-color: rgba((@main-text), 0.6);
+  height: 45px;
+  width: 280px;
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    height: 93px;
+    width: 648px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+  }
+}
+
+.video-control__scale {
+  position: absolute;
+  height: 2px;
+  width: 220px;
+  background-color: rgba((@contrast-text), 0.4);
+  bottom: 20px;
+  left: 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 398px;
+    bottom: 46px;
+    left: 92px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
+  }
+}
+
+.video-control__toggle {
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: 16px;
+  left: 59px;
+  position: absolute;
+
+  @media (min-width: @tablet-width) {
+    bottom: 42px;
+    left: 205px;
+  }
+}
+
+.video-control__buttons {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 17px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 30px;
+  }
+}
+
+.video-control__icon {
+  fill: #5c6870;
+
+  &:hover {
+    fill: @sub-text;
+  }
+
+  &:active {
+    fill: rgba((@sub-text), 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    fill: @contrast-text;
+
+    &:hover {
+      fill: rgba((@contrast-text), 0.6);
+    }
+
+    &:active {
+      fill: rgba((@contrast-text), 0.3);
+    }
+  }
+}
+
+.video-control__replay {
+  border: none;
+  margin-right: 122px;
+  background-color: @contrast-text;
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba((@main-text), 0.1);
+    margin-right: 460px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 610px;
+  }
+}
+
+.video-control__subtitles {
+  border: none;
+  background-color: @contrast-text;
+  margin-right: 17px;
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba((@main-text), 0.1);
+  }
+}
+
+.video-control__fullscreen {
+  border: none;
+  background-color: @contrast-text;
+
+  @media (min-width: @tablet-width) {
+    background-color: rgba((@main-text), 0.1);
+  }
+}

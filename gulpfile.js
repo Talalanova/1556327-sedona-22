@@ -63,7 +63,7 @@ exports.copy = copy;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -71,17 +71,17 @@ const server = (done) => {
   });
   done();
 }
-exports.server = server;
 
 // Watcher
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/*.html").on("change", gulp.series(
+    html,
+    sync.reload
+  ));
 }
 
-exports.default = gulp.series(
-  styles, server, watcher
-);
+
 
 // Clean
 const clean = () => {
@@ -89,7 +89,7 @@ const clean = () => {
 };
 
 // Build
-exports.build = gulp.series(
+const build = gulp.series(
   clean,
   copy,
   optimizeImages,
@@ -97,4 +97,12 @@ exports.build = gulp.series(
     styles,
     html
   )
+);
+exports.build = build
+
+// Default
+exports.default = gulp.series(
+  build,
+  server,
+  watcher
 );

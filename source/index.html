@@ -11,7 +11,9 @@
   <body class="page__body">
     <div class="page__wrapper container">
       <header class="page-header">
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav main-nav--closed"> <!-- Закрытое меню -->
+        <!--<nav class="main-nav main-nav--opened"> <!-- Открытое меню -->
+        <!--<nav class="main-nav"> <!-- Меню без JS -->
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
@@ -36,17 +38,19 @@
               </li>
             </ul>
           </div>
-          <a href="#" class="page-header__logo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-              <img src="img/logotype-mobile.svg" alt="Город «Седона»">
-            </picture>
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-      </nav>
+          <div class="page-header__logo">
+            <a href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                <img src="img/logotype-mobile.svg" alt="Город «Седона»">
+              </picture>
+            </a>
+          </div>
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
+        </nav>
       </header>
       <main class="page-main">
         <h1 class="visually-hidden">Город Седона</h1>
@@ -74,7 +78,7 @@
                 <ul class="sub-list">
                   <li class="sub-list__item">
                     <h4 class="sub-list__title sub-list__title--motel">Жилье</h4>
-                    <p class="sub-list__text">Рекомендуем пожить в<br> настоящем мотеле, все<br> как в кино!</p>
+                    <p class="sub-list__text">Рекомендуем пожить в <br> настоящем мотеле, все <br> как в кино!</p>
                   </li>
                   <li class="sub-list__item">
                     <h4 class="sub-list__title sub-list__title--gift">Сувениры</h4>
@@ -82,7 +86,7 @@
                   </li>
                   <li class="sub-list__item">
                     <h4 class="sub-list__title sub-list__title--food">Еда</h4>
-                    <p class="sub-list__text">Всегда заказывайте ФИРМЕННЫЙ&nbsp;БУРГЕР,<br> Вы НЕ разочаруетесь!</p>
+                    <p class="sub-list__text">Всегда заказывайте ФИРМЕННЫЙ&nbsp;БУРГЕР,<br class="sub-list__br"> Вы НЕ разочаруетесь!</p>
                   </li>
                 </ul>
               </li>
@@ -101,17 +105,17 @@
               <li class="advantages__item advantages__item--grey">
                 <h3 class="advantages__sub-title">Небольшая площадь</h3>
                 <p class="advantages__number">№3</p>
-                <p class="advantages__text">Все интересные места <br>находятся очень близко</p>
+                <p class="advantages__text">Все интересные места&nbsp;<br>находятся очень близко</p>
               </li>
               <li class="advantages__item advantages__item--grey">
                 <h3 class="advantages__sub-title">Красивая дорога</h3>
                 <p class="advantages__number">№4</p>
-                <p class="advantages__text">Ехать в Седону из<br> Лас Вегаса совсем<br> не&nbsp;скучно!</p>
+                <p class="advantages__text">Ехать в Седону из&nbsp;<br>Лас-Вегаса совсем&nbsp;<br>не&nbsp;скучно!</p>
               </li>
               <li class="advantages__item advantages__item--grey">
                 <h3 class="advantages__sub-title">Мало туристов</h3>
                 <p class="advantages__number">№5</p>
-                <p class="advantages__text">Большинство&nbsp;едет&nbsp;в&nbsp;<br>Гранд&nbsp;Каньон и <br>толпится там</p>
+                <p class="advantages__text">Большинство&nbsp;едет&nbsp;в&nbsp;<br>Гранд&nbsp;Каньон и&nbsp;<br>толпится там</p>
               </li>
             </ul>
           </div>
