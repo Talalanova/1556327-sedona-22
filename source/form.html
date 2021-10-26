@@ -65,11 +65,11 @@
               <legend class="form__legend" aria-label="Ввод имени">Представьтесь:</legend>
               <div class="form__field form__field--name">
                 <label class="form__label" for="name">Имя*:</label>
-                <input class="form__control form__control--text" type="text" id="name" name="name" value="Петр">
+                <input class="form__control form__control--text" type="text" id="name" name="name" value="Петр" required>
               </div>
               <div class="form__field form__field--surname">
                 <label class="form__label" for="surname">Фамилия*:</label>
-                <input class="form__control form__control--text" type="text" id="surname" name="surname" value="Иванов">
+                <input class="form__control form__control--text" type="text" id="surname" name="surname" value="Иванов" required>
               </div>
               <div class="form__field form__field--patronymic">
                 <label class="form__label" for="patronymic">Отчество:</label>
@@ -80,12 +80,12 @@
               <legend class="form__legend" aria-label="Ввод контактов">Контактная информация:</legend>
               <div class="form__field form__field--phone">
                 <label class="form__label" for="number"><span class="form__hidden">Контактный</span> телефон*:</label>
-                <input class="form__control form__control--text form__control--phone" type="tel" id="number" name="number" value="Введите телефон">
+                <input class="form__control form__control--text form__control--phone" type="tel" id="number" name="number" value="Введите телефон" required>
                 <span class="form__icon"></span>
               </div>
               <div class="form__field form__field--email">
                 <label class="form__label" for="email">Электронная почта*:</label>
-                <input class="form__control form__control--text form__control--mail" type="email" id="email" name="email" value="Введите e-mail">
+                <input class="form__control form__control--text form__control--mail" type="email" id="email" name="email" value="Введите e-mail" required>
                 <span class="form__icon"></span>
               </div>
             </fieldset>
