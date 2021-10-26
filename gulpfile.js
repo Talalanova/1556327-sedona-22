@@ -9,6 +9,7 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const del = require("del");
 const htmlmin = require("gulp-htmlmin");
+const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 
 // Styles
@@ -33,6 +34,18 @@ const html = () => {
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/script.js")
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
 
 // Images
 const optimizeImages = () => {
@@ -75,6 +88,7 @@ const server = (done) => {
 // Watcher
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html").on("change", gulp.series(
     html,
     sync.reload
@@ -95,7 +109,8 @@ const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
-    html
+    html,
+    scripts
   )
 );
 exports.build = build
